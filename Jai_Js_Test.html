@@ -1,0 +1,65 @@
+<html>
+<head>
+<title> Jai Test </title>
+<head>
+	   <script type="text/javascript">
+        function showImg_1() {
+            document.getElementById("black").style.display = "";
+            document.getElementById('blue').style.display="none";	
+            document.getElementById('gold').style.display="none";	
+            document.getElementById('rose_gold').style.display="none";	
+        }
+
+          function showImg_2() {
+            document.getElementById("blue").style.display = "";
+			document.getElementById('black').style.display="none";	
+        	document.getElementById('gold').style.display="none";	
+        	document.getElementById('rose_gold').style.display="none";	
+
+        }
+
+         function showImg_3() {
+         	document.getElementById("gold").style.display = "";
+         	document.getElementById('black').style.display="none";	
+        	document.getElementById('blue').style.display="none";	
+        	document.getElementById('rose_gold').style.display="none";	
+
+        }
+
+         function showImg_4() {
+            document.getElementById("rose_gold").style.display = "";
+            document.getElementById('black').style.display="none";	
+        	document.getElementById('blue').style.display="none";	
+        	document.getElementById('gold').style.display="none";	
+        }
+</script>
+</head>
+
+<body>
+
+<div>
+<input type="submit"  value="black" onclick="showImg_1()"/>
+<input type="submit"  value="blue" onclick="showImg_2()"/>
+<input type="submit"  value="gold" onclick="showImg_3()"/>
+<input type="submit"  value="rose_gold" onclick="showImg_4()"/>
+
+</div>
+
+
+<div style= "margin-top: 20px;">
+
+   <img id="black" src="black.jpeg" style="display: none;"/>
+   <img id="blue" src="blue.jpeg" style="display: none;"/>
+   <img id="gold" src="gold.jpeg" style="display: none;"/>
+   <img id="rose_gold" src="rose_gold.jpeg" style="display: none;"/>
+   
+   
+ 
+</div>
+
+</body>
+</html>
+
+
+
+
