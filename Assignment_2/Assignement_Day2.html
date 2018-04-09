@@ -1,0 +1,76 @@
+<html>
+<body>
+
+<p id = "test1"></p>
+<p id = "test2"></p>
+
+<button onclick = "myMessage_1()"> Question_1 </button>
+<button onclick = "myMessage_2()"> Question_2 </button>
+<button onclick = "myMessage_3()"> Question_3 </button>
+<button onclick = "myMessage_4()"> Question_4 </button>
+<input type="text" id="a" placeholder="Question5">
+<input type="button" value= "Question_5"  onclick="agecheck(this.id)" >
+
+</body>
+<script type="text/javascript">
+
+
+// Question_1
+var counter = 0;
+ counter++; ++counter;
+function myMessage_1()
+{
+
+	alert( "Answer is: " + counter +  " The initial value of counter is 0, postfix (x++) will add 1 & in prefix(++X) performs a calculation (1 + 1) ");
+}
+
+
+// Question_2
+var n = 2; n *= 3 + 5;     //x = x * y i.e 2;2x8
+function myMessage_2()
+{
+	alert("answer is: "  + n +  " Here n=2; 2* = 8 i.e 2*8=16" );
+}
+
+
+// Question_3
+var a = 1, b = 1; 
+var c = ++a; 
+var d = b++;
+
+
+// document.getElementById("demo").innerHTML = Value of variable a is +a + ;
+
+function myMessage_3()
+{
+	alert( "Value of a is: " + a +  " Value of b is: " +  b +  " Value of c is: "+ c+  " Value of d is:" +  d);
+}
+
+
+// Question_4
+ //What are the values of a and x after the code below?
+var a = 2; var x = 1 + (a *= 2);
+
+function myMessage_4()
+{
+	alert("Value of a is: " + a +   " Value of x is: " + x);
+
+}
+
+//Question_8
+//8. Write a condition to check if the given age is of a teenager or no. 
+function agecheck(){
+	
+	var number = document.getElementById('a').value;
+	if(number>=20)
+	{
+		alert("Not a teenage :(");
+		
+	}else{
+         alert("A teenager :) ");
+         
+		}
+}
+
+</script>
+</html>
